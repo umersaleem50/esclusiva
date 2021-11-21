@@ -1,0 +1,30 @@
+.features{
+    display: grid;
+    
+    grid-column: col-start 6 / -1;
+    grid-row-start: 3;
+    &__items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: $grid-gap;
+    }
+
+    &__item{
+        // width: 70%;
+        font-size: $fs-secondary;
+        font-family: $ff-regular;
+        display: flex;
+        justify-items: start;
+        align-items: center;
+
+        svg{
+            margin-right: 2rem;
+        }
+    }
+
+    &__icon{
+    width: 3.3rem;
+    height: 2.267rem;
+
+    }
+}

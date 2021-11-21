@@ -1,0 +1,22 @@
+.store{
+   display: grid;
+   grid-template-columns: $grid-template-colume;
+   margin: 10rem 0;
+//    align-items: center;
+    
+    // grid-template-rows: repeat(auto-fit, minmax(min-content, 32.8rem));
+    // grid-row-gap: calc(#{$grid-gap} * 2);
+    // grid-auto-flow: column;
+    
+    &__container{
+        grid-column: center-start / center-end;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, minmax(min-content, 24rem));
+        grid-column-gap: $grid-gap;
+        grid-row-gap: 6rem;
+        
+    }
+    
+}
+

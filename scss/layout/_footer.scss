@@ -1,0 +1,45 @@
+.footer{
+    height: auto;
+    display: grid;
+    grid-template-rows: minmax(2rem, 14rem) 1fr minmax(2rem, 14rem);
+    grid-column-gap: $grid-gap;
+    grid-column: center-start / center-end;
+    grid-template-columns: $grid-template-colume;
+    background-color: $color-black;
+    margin-bottom: 1rem;
+
+    &__nav{
+        grid-column: col-start 7 / span 2;
+        grid-row-start: 2;
+
+        &__heading{
+            font-size: $fs-secondary;
+            color: $color-white;
+            font-family: $ff-semi;
+            margin-bottom: 4.5rem;
+        }
+
+        &--2{
+            grid-column: col-start 10 / -1;
+        }
+    }
+
+    &__links{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: $color-white;
+        font-size: $fs-medium;
+        font-family: $ff-medium;
+
+        &:not(:first-child){
+            margin-top: 2rem;
+        }
+
+    }
+}
+

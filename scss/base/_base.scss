@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    font-size: 62.5%; 
+    font-family: $ff-regular;
+}
+body{
+    font-size: $fs-small;
+    font-family: $ff-medium;
+}
+.container{
+    display: grid;
+    grid-template-columns: [full-start] minmax(1rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content,12rem) [col-end]) [center-end] minmax(1rem, 1fr) [full-end] ;
+}

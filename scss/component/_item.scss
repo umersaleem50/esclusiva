@@ -1,0 +1,38 @@
+.item{
+    display: grid;
+    grid-row-gap: 1.4rem;
+    justify-items: start;
+    position: relative;
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__name{
+        font-family: $ff-regular;
+        font-size: $fs-small;
+    }
+
+    &__price{
+        font-family: $ff-semi;
+        font-size: $fs-secondary;
+    }
+
+    &__sale{
+        font-size: $fs-regular;
+        font-family: $ff-medium;
+        padding:.5rem 1rem;
+        border: 1px solid $color-black;
+        display: inline-block;
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+    }
+}

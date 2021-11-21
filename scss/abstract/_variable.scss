@@ -1,0 +1,29 @@
+$color-primary-light: #B27554;
+$color-primary-dark: #814D35;
+
+$color-secondary-light: #E4D1BA;
+$color-secondary-dark: #E8CCBA;
+
+
+$color-black: #3D3D3A;
+$color-white: #ffffff;
+
+$fs-slide: 7.2rem;
+$fs-heading: 4.8rem;
+$fs-secondary: 2.4rem;
+$fs-regular: 1.8rem;
+$fs-medium: 1.6rem;
+$fs-small: 1.4rem; 
+
+$ff-regular: 'Montserrat Regular', serif;
+$ff-semi: 'Montserrat SemiBold', serif;
+$ff-medium: 'Montserrat Medium', serif;
+$ff-black: 'Montserrat Black' , serif;
+
+$ff-logo: 'Trirong', serif;
+
+$global-padding: 4rem;
+$grid-gap: 5rem;
+
+$grid-template-colume: [center-start] 1fr repeat(12, [col-start] minmax(1rem, 6rem) [col-end]) 1fr [center-start];
+$grid-gap: 3rem;

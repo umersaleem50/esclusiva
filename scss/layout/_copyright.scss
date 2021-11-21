@@ -1,0 +1,15 @@
+.copyright{
+    grid-column: col-start 1 / -2;
+    border-top: 1px solid rgba($color-white, .5);
+    padding: 2rem 0;
+    grid-row: 3 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    &__text{
+        color: $color-white;
+        font-size: $fs-medium;
+        font-family: $ff-medium;
+    }
+}

@@ -1,0 +1,46 @@
+.signup{
+    display: grid;
+    grid-template-rows: repeat(4, minmax(min-content, 4rem));
+    grid-row-gap: 3.5rem;
+    grid-row-start: 2;
+    grid-column: col-start 1 / span 4;
+    justify-items: start;
+
+
+    input[type=email]{
+        width: 100%;
+        margin-top: 1rem;
+        // border: none;
+        background: transparent;
+        border: transparent;
+        border-bottom: 2px solid $color-white;
+        padding-bottom: 1rem;
+        
+        font-size: $fs-medium;
+        font-family: $ff-medium;
+        color: $color-white;
+        transition: border-bottom .5s;
+       
+        &:focus-within{
+           
+            outline: none;
+        }
+
+        &:invalid{
+            border-bottom: 2px solid rgb(189, 71, 95);
+        }
+
+        &:valid{
+            // border-bottom: 2px solid $color-primary-light;
+            border-bottom: 2px solid rgb(68, 172, 68);
+        }
+
+        
+    }
+    
+    input{
+        margin-top: .5rem;
+    }
+
+    
+}

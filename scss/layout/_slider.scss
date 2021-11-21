@@ -1,0 +1,83 @@
+.slider{
+    background-color: khaki;
+    grid-column: center-start/ center-end;
+    overflow: hidden;
+    position: relative;
+    height: 90%;
+    
+    
+
+    &__control{
+        // background-color: rgb(237, 243, 234);
+        opacity: .5;
+        position: absolute;
+        padding: 3rem 5rem;
+        bottom: 2rem;
+        width: 100%;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    
+
+    &__dots{
+        display: flex;
+    }
+    &__dot{
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+        background-color: rgba($color-primary-light, .7);
+        cursor: pointer;
+
+
+        &--active{
+            background-color: rgba($color-primary-dark, 1);
+        }
+
+
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+    }
+
+    
+}
+.slide{
+    
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient( $color-secondary-light ,  $color-secondary-dark);
+    // background-color: $color-secondary-dark;
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] minmax(min-content, 12rem) [col-end]);
+    transition: all 1.5s cubic-bezier(.52,0,.42,.99);
+
+    &__detail{
+        margin: auto 0;
+        display: grid;
+        grid-column: 3 / span 4;
+        
+        grid-template-rows: repeat(3, minmax(min-content, 4rem));
+        grid-row-gap: 4rem;
+        justify-items: start;
+        align-items: center;
+    }
+
+    &__img{
+        grid-column: 7 / 11;
+    
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            background-position: bottom;
+        }
+    }
+}
+

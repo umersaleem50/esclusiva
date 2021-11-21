@@ -1,0 +1,20 @@
+{
+  "name": "esclusiva",
+  "version": "1.0.0",
+  "description": "esclusiva e-commerce landing page",
+  "main": "index.js",
+  "scripts": {
+    "watch:scss": "node-sass scss/main.scss style.css -w"
+  },
+  "author": "Umer",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.4",
+    "node-sass": "^6.0.1"
+  },
+  "dependencies": {
+    "hbs": "^4.1.2"
+  }
+}

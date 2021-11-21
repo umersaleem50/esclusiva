@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Trirong:wght@700&display=swap');
+
+@font-face {
+    font-family: 'Montserrat regular';
+    src: url(../../vendors/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat Medium';
+    src: url(../../vendors/fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat SemiBold';
+    src: url(../../vendors/fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Montserrat Black';
+    src: url(../../vendors/fonts/Montserrat-Black.ttf);
+}
+
+.heading--hero{
+    font-size: $fs-slide;
+    font-family: $ff-black;
+    color: $color-white;
+}
+
+.heading--detail{
+    font-size: $fs-secondary;
+    font-family: $ff-regular;
+    color: $color-white;
+
+    &--section{
+        color: $color-black;
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
+
+.heading--item{
+    font-size: $fs-heading;
+    font-family: $ff-semi;
+    color: $color-white;
+}
+
+.detail--item{
+    font-size: $fs-secondary;
+    font-family: $ff-regular;
+    color: $color-white;
+}
+
+.heading--section{
+    font-size: $fs-heading;
+    font-family: $ff-semi;
+    text-align: center;
+}
+
+.heading__giant{
+    font-size: calc(#{$fs-slide} * 2);
+    font-family: $ff-black;
+    color: $color-white;
+    grid-row-start: 3;
+    grid-row-end:5 ;
+    grid-column-start: col-start 5 ;
+    z-index: 10;
+
+    &--2{
+        color: $color-black;
+        grid-column: col-start 1 / span 4;
+        grid-row: 2 / span 3 ;
+    }
+}
+
+.heading--signup{
+    font-size: $fs-secondary;
+    font-family: $ff-semi;
+    color: $color-white;
+}
+
+.detail--signup{
+    color: rgba($color-white, .3);
+    font-size: $fs-medium;
+    font-family: $ff-medium;
+}
